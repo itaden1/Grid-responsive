@@ -3,8 +3,6 @@ var navResponsive = {
 		this.navbar = document.getElementById('nav-collapse')
 		this.toggleBtn = document.getElementById('icon');
 		this.dropdownbtns = this.findDropDwnBtns();
-		this.dropdownlists = '';
-		//console.log(this.dropdownbtns);
 
 	},
 	navExpand: function(){
