@@ -14,6 +14,18 @@ var navResponsive = {
 			navbar.className = 'nav';
 		};
 	},
+	openSubMenu: function(x){
+		for(var i = 0; i < x.children.length; i++){
+			if(x.children[i].tagName == 'UL'){
+				console.log('shit');
+				if(x.children[i].hidden == true){
+					x.children[i].hidden = false;
+				}else{
+					x.children[i].hidden = true;
+				}
+			}
+		}
+	},
 	findDropDwnBtns: function(){
 		var navlinks = this.navbar.getElementsByTagName('li');
 		var btns = [];
@@ -22,8 +34,11 @@ var navResponsive = {
 			if(ul.length > 0){
 				for(var x= 0; x < ul.length; x++){
 					ul[x].className = 'submenu';
+					ul[x].hidden = true;
 					ul[x].parentNode.className = 'dropdown';
 					var drpBtn = ul[x].parentNode;
+					console.log(drpBtn);
+					drpBtn.onclick = this.openSubMenu.bind(this,drpBtn);
 					btns.push(drpBtn);
 				}
 			}
