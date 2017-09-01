@@ -3,39 +3,50 @@
 	<head>
 		<meta charset = "utf-8">
 		<meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-		<title>grid responsive demo</title>
+		<title>BloX</title>
+		<link rel = "stylesheet" type = "text/css" href = "css/normalize.css">
 		<link rel = "stylesheet" type = "text/css" href = "https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-		<!-- link to grid responsive .css -->
+		<!-- link to BloX .css -->
 		<link rel = "stylesheet" type = "text/css" href = "css/grid-responsive.css">
 
 	</head>
 	<body>
-
-		<!-- header area -->
-		<div class = "container">
-			<h1>Grid Responsive</h1>
+		<!-- top navigation -->
+		<div class = "navigation nav-dark">
+			<div class = "container">
+				<div class = "nav nav-head">
+					<a href = "#">Logo</a>	
+				</div>
+				<div class = "nav nav-right" id="nav-collapse">
+					<ul>
+						<li><a href = "#">link</a></li>
+						<li><a href = "#">link</a></li>
+						<li><a href = "#">link</a></li>
+						<li class = "icon" id = "icon"><a href = "javascript:;">&#9776;</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
-
+		<!-- header area -->
+		<div class = "bg-mid">
+			<div class = "container banner">
+				<h1>BloX</h1>
+				<h2>Responsive Framework</h2>
+			</div>
+		</div>
 		<!-- Navigation -->
-		<div class = "container">
-			<ul class = "nav" id = "nav-collapse">
-				<li><a href = "#">Home</a></li>
-				<li><a href = "#">About</a></li>
-				<li><a href = "#">Other</a>
-					<ul>
-						<li><a href = "#">Link</a></li>
-						<li><a href = "#">Link</a></li>
-						<li><a href = "#">Link</a></li>
-						<li><a href = "#">Link</a></li>
-					</ul>
-				</li>
-				<li><a href = "#">Stuff</a>
-					<ul>
-						<li><a href = "#">thing</a></li>
-					</ul>
-				</li>
-				<li class = "icon" id = "icon"><a href = "javascript:;">&#9776;</a></li>
-			</ul>
+		<div class = "navigation nav-light">
+			<div class = "container">
+				<div class = "nav" id = "nav-collapse">
+				<ul>
+					<li><a href = "#">Home</a></li>
+					<li><a href = "#">About</a></li>
+					<li><a href = "#">Other</a></li>
+					<li><a href = "#">Stuff</a></li>
+					<li class = "icon" id = "icon"><a href = "javascript:;">&#9776;</a></li>
+				</ul>
+				</div>
+			</div>
 		</div>
 
 		<! -- container for main content and sidebar -->
@@ -45,52 +56,86 @@
 				<!-- Main content -->
 				<div class = "col-xs-12 col-l-9">
 					<div class = "row">
-						<h2>Main Content</h2>
-						<p>Lo-fi pour-over street art umami hammock. Chicharrones snackwave fixie tumblr everyday carry tacos mixtape lumbersexual. IPhone jean shorts crucifix austin YOLO disrupt palo santo woke kale chips irony. Kinfolk banjo kogi pork belly single-origin coffee master cleanse</p>
-						<div class = "row">
-							<div class = "col-xs-12 col-m-6 col-l-4">
-								<h4>Responsive Image</h4>
-								<img class = "img-responsive" src = "img/cat.jpg" alt = "responsive cat">
-							</div>
-							<div class = "col-xs-12 col-m-6 col-l-4">
-								<h4>Responsive Image</h4>
-								<img class = "img-responsive" src = "img/cat.jpg" alt = "responsive cat">
-							</div>
-							<div class = "col-xs-12 col-m-6 col-l-4">
-								<h4>Responsive Image</h4>
-								<img class = "img-responsive" src = "img/cat.jpg" alt = "responsive cat">
-							</div>
+						<div class = "col-xs-12">
+
+							<h1>Heading 1</h1>
+							<p>Lo-fi pour-over street art umami hammock. Chicharrones snackwave fixie tumblr everyday carry tacos mixtape lumbersexual. IPhone jean shorts crucifix austin YOLO disrupt palo santo woke kale chips irony. Kinfolk banjo kogi pork belly single-origin coffee master cleanse</p>
+
 						</div>
 					</div>
 					<div class = "row">
-						<div class = "col-m-6">
-							<h3>Content</h3>
-							<p>Lo-fi pour-over street art umami hammock. Chicharrones snackwave fixie tumblr everyday carry tacos mixtape lumbersexual. IPhone jean shorts crucifix austin YOLO disrupt palo santo woke kale chips irony. Kinfolk banjo kogi pork belly single-origin coffee master cleanse</p>
+						<div class = "col-xs-12 col-m-6 col-l-4">
+							<img class = "img-responsive" src = "img/cat.jpg" alt = "responsive cat">
 						</div>
-						<div class = "col-m-6">
-							<h3>Content</h3>
+						<div class = "col-xs-12 col-m-6 col-l-4">
+							<img class = "img-responsive" src = "img/cat.jpg" alt = "responsive cat">
+						</div>
+						<div class = "col-xs-12 col-m-6 col-l-4">
+							<img class = "img-responsive" src = "img/cat.jpg" alt = "responsive cat">
+						</div>
+					</div>
+
+					<div class = "row">
+						<div class = "col-m-8">
+
+							<h2>Heading 2</h2>
+							<p>Lo-fi pour-over street art umami hammock. Chicharrones snackwave fixie tumblr everyday carry tacos mixtape lumbersexual. IPhone jean shorts crucifix austin YOLO disrupt palo santo woke kale chips irony. Kinfolk banjo kogi pork belly single-origin coffee master cleansePitchfork woke hella activated charcoal messenger bag blue bottle chicharrones. Biodiesel kitsch adaptogen, af beard pitchfork single-origin coffee four loko typewriter gochujang direct trade. Tilde green juice affogato you probably haven't heard of them copper mug tbh tousled fam keffiyeh hammock twee. </p>
+
+						</div>
+						<div class = "col-m-4">
+
+							<h2>Heading 2</h2>
 							<p>Lo-fi pour-over street art umami hammock. Chicharrones snackwave fixie tumblr everyday carry tacos mixtape lumbersexual. IPhone jean shorts crucifix austin YOLO disrupt palo santo woke kale chips irony. Kinfolk banjo kogi pork belly single-origin coffee master cleanse</p>
+
+						</div>
+					</div>
+					<div class = "row">
+						<div class = "col-m-4">
+							<h3>Heading 3</h3>
+							<p>Pitchfork woke hella activated charcoal messenger bag blue bottle chicharrones. Biodiesel kitsch adaptogen, af beard pitchfork single-origin coffee four loko typewriter gochujang direct trade. Tilde green juice affogato you probably haven't heard of them copper mug tbh tousled fam keffiyeh hammock twee. Taiyaki street art iPhone authentic, pop-up tumblr venmo.</p>	
+						</div>
+						<div class = "col-m-8">
+							<h3>Heading 3</h3>
+							<p>Pitchfork woke hella activated charcoal messenger bag blue bottle chicharrones. Biodiesel kitsch adaptogen, af beard pitchfork single-origin coffee four loko typewriter gochujang direct trade. Tilde green juice affogato you probably haven't heard of them copper mug tbh tousled fam keffiyeh hammock twee. Taiyaki street art iPhone authentic, pop-up tumblr venmo. Quinoa food truck shabby chic helvetica, master cleanse austin drinking vinegar blog yuccie paleo tofu blue bottle plaid franzen tbh. Snackwave hoodie small batch shabby chic chicharrones vape four loko paleo typewriter thundercats roof party leggings asymmetrical yr biodiesel. Four dollar toast you probably haven't heard of them hot chicken freegan before they sold out, skateboard cred asymmetrical 90's meggings drinking vinegar. </p>
 						</div>
 					</div>
 				</div>
 
 				<!-- Sidebar -->
-				<div class = "col-l-3">
+				<div class = "col-l-3 sidebar-right">
+
 					<h3>Sidebar</h3>
 					<p> Before they sold out tilde hexagon brooklyn gentrify vice synth kickstarter pour-over messenger bag plaid paleo shoreditch live-edge distillery. Raclette chillwave pitchfork polaroid 90's normcore cornhole biodiesel four dollar toast irony cronut thundercats vape poke iceland.</p>
+
 				</div>
 			</div>
 		</div>
 		<div class = "container">
 			<div class = "row">
-				<h2 class = "center">Footer</h2>
-				<div class = "col-m-6 center">
+				<div class = "col-xs-12">
+					<h2 class = "center">Footer</h2>
+				</div>
+			</div>
+			<div class = "row">
+				<div class = "col-m-3 center">
 					<p>Ennui synth distillery<br>
 					Copper mug actually<br>
 					Freegan mustache<br>
 					Tattooed snackwave<br></p>
 				</div>
-				<div class = "col-m-6 center">
+				<div class = "col-m-3 center">
+					<p>Ennui synth distillery<br>
+					Copper mug actually<br>
+					Freegan mustache<br>
+					Tattooed snackwave<br></p>
+				</div>
+				<div class = "col-m-3 center">
+					<p>Ennui synth distillery<br>
+					Copper mug actually<br>
+					Freegan mustache<br>
+					Tattooed snackwave<br></p>
+				</div>
+				<div class = "col-m-3 center">
 					<p>Ennui synth distillery<br>
 					Copper mug actually<br>
 					Freegan mustache<br>

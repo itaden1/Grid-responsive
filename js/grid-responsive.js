@@ -1,18 +1,22 @@
 var navResponsive = {
 	init: function(){
-		this.navbar = document.getElementById('nav-collapse')
-		this.toggleBtn = document.getElementById('icon');
-		this.dropdownbtns = this.findDropDwnBtns();
-		this.toggleBtn.onclick = this.navExpand.bind(this);
+		this.navbar = document.getElementsByClassName('nav-collapse')
+		this.toggleBtn = document.getElementsByClassName('icon');
+		//this.dropdownbtns = this.findDropDwnBtns();
+		for(var i=0;i<this.toggleBtn.length;i++){
+			this.toggleBtn[i].onclick = this.navExpand.bind(target);
+		}
 
 	},
-	navExpand: function(){
-		var navbar = this.navbar;
+	navExpand: function(target){
+		console.log('sup');
+		var navbar = target;
 		if (navbar.className === 'nav'){
 			navbar.className += ' responsive';
 		}else{
 			navbar.className = 'nav';
-		};
+
+		}
 	},
 	openSubMenu: function(x){
 		var pressed = x.target.parentNode;
