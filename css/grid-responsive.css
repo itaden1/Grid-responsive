@@ -141,9 +141,10 @@ p{margin-bottom:0;padding-bottom:20px;}
 .nav-dark a:hover{color:#eee;}
 .nav-dark li a:hover{text-decoration:underline;}
 
-.nav-light{color:#333;}
+.nav-light{color:#333;background-color:#ddd;}
 .nav-light a{color:#333;}
 .nav-light a:hover{color:#666;}
+.nav-light li:hover{background-color:#ccc;}
 
 /* Nav head Logo */
 .nav-head{float:left;}
@@ -161,6 +162,40 @@ p{margin-bottom:0;padding-bottom:20px;}
 
 
 /* Animations */
+@-webkit-keyframes slide-in-left{
+	0%{transform:translate(-150px,0)}
+	100%{transform:translate(0,0)}
+}
+@-moz-keyframes slide-in-left{
+	0%{transform:translate(-150px,0)}
+	100%{transform:translate(0,0)}
+}
+@-o-keyframes slide-in-left{
+	0%{transform:translate(-150px,0)}
+	100%{transform:translate(0,0)}
+}
+@keyframes slide-in-left{
+	0%{transform:translate(-150px,0)}
+	100%{transform:translate(0,0)}
+}
+
+@-webkit-keyframes slide-out-left{
+	0%{transform:translate(0,0)}
+	100%{transform:translate(-150px,0)}
+}
+@-moz-keyframes slide-out-left{
+	0%{transform:translate(0,0)}
+	100%{transform:translate(-150px,0)}
+}
+@-o-keyframes slide-out-left{
+	0%{transform:translate(0,0)}
+	100%{transform:translate(-150px,0)}
+}
+@keyframes slide-out-left{
+	0%{transform:translate(0,0)}
+	100%{transform:translate(-150px,0)}
+}
+
 @-webkit-keyframes menu-open{
 	0%{max-height:50px;}
 	100%{max-height:500px;}
@@ -223,4 +258,27 @@ p{margin-bottom:0;padding-bottom:20px;}
 		clear:both;
 	}
 
+}
+
+/* side navigation */
+.nav-side{width:150px;float:left;}
+.nav-side ul{}
+.nav-side li{list-style-type:none;padding:5px 0 5px 0;border-bottom:solid 1px #777;}
+.nav-side a{text-decoration:none;color:#333;}
+.nav-side .icon{}
+
+.nav-side.responsive{
+	-webkit-animation:slide-in-left 1s ease-out;
+	-moz-animation:slide-in-left 1s ease-out;
+	-o-animation:slide-in-left 1s ease-out;
+	animation:slide-in-left 1s ease-out;
+}
+.nav-side.responsive ul{
+	display:block;
+}
+.nav-side.close{
+	-webkit-animation:slide-out-left 1s ease-out;
+	-moz-animation:slide-out-left 1s ease-out;
+	-o-animation:slide-out-left 1s ease-out;
+	animation:slide-out-left 1s ease-out;
 }

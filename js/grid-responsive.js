@@ -5,12 +5,12 @@ var navResponsive = {
 		//this.dropdownbtns = this.findDropDwnBtns();
 	
 		this.toggleBtn.onclick = this.navExpand.bind(this);
-		
+
 
 	},
 	navExpand: function(){
 		var navbar = this.navbar;
-		var height = document.getElementById('nav-collapse').clientHeight;
+		console.log(this);
 		if (!navbar.classList.contains('responsive')){
 			navbar.classList.add('responsive');
 			navbar.classList.remove('close');
@@ -21,4 +21,7 @@ var navResponsive = {
 		}
 	}
 }
+
+
+
 navResponsive.init();
