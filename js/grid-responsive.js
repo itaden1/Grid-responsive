@@ -11,7 +11,6 @@ var navResponsive = {
 	navExpand: function(){
 		var navbar = this.navbar;
 		var height = document.getElementById('nav-collapse').clientHeight;
-		console.log(height);
 		if (!navbar.classList.contains('responsive')){
 			navbar.classList.add('responsive');
 			navbar.classList.remove('close');
