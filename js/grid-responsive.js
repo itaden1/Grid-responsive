@@ -2,8 +2,6 @@ var navResponsive = {
 	init: function(){
 		this.navbar = document.getElementById('nav-collapse')
 		this.toggleBtn = document.getElementById('icon');
-		//this.dropdownbtns = this.findDropDwnBtns();
-	
 		this.toggleBtn.onclick = this.navExpand.bind(this);
 
 
@@ -17,11 +15,8 @@ var navResponsive = {
 		}else{
 			navbar.classList.remove('responsive');
 			navbar.classList.add('close');
-
 		}
 	}
 }
-
-
 
 navResponsive.init();
