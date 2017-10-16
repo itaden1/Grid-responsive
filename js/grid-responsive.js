@@ -1,14 +1,9 @@
-var navResponsive = {
-	init: function(){
-		this.navbar = document.getElementById('nav-collapse')
-		this.toggleBtn = document.getElementById('icon');
-		this.toggleBtn.onclick = this.navExpand.bind(this);
-
-
-	},
-	navExpand: function(){
-		var navbar = this.navbar;
+function navResponsive(bar,btn){
+	this.navbar = document.getElementById(bar);
+	this.toggleBtn = document.getElementById(btn);
+	this.navExpand = function(){
 		console.log(this);
+		var navbar = this.navbar;
 		if (!navbar.classList.contains('responsive')){
 			navbar.classList.add('responsive');
 			navbar.classList.remove('close');
@@ -17,6 +12,13 @@ var navResponsive = {
 			navbar.classList.add('close');
 		}
 	}
+	this.toggleBtn.addEventListener('click',this.navExpand.bind(this))
+	
+	
 }
 
-navResponsive.init();
+
+// tests
+// on a live site these will be in seperate script
+var myNav = new navResponsive('nav-collapse','icon');
+var myNav3 = new navResponsive('nav-collapse3','icon3');
