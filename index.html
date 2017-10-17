@@ -66,8 +66,21 @@
 					<div class = "nav nav-left" id = "nav-collapse">
 						<ul>
 							<li><a href = "#">Home</a></li>
+							<li class = "drop-btn" id= "drop-btn2"><a href = "javascript:;">Drop<i class = "fa fa-caret-down menu-caret" aria-hidden="true"></i></a>
+								<ul class = "drop-menu" id = "drop-menu2">
+									<li><a href = "#">item one</a></li>
+									<li><a href = "#">item two</a></li>
+								</ul>
+							</li>
 							<li><a href = "#">About</a></li>
-							<li><a href = "#">Other</a></li>
+							<li class = "drop-btn" id = "drop-btn"><a href = "javascript:;">Drop down<i class = "fa fa-caret-down menu-caret" aria-hidden="true"></i></a>
+								<ul class = "drop-menu" id = "drop-menu">
+									<li><a href = "#">item one</a></li>
+									<li><a href = "#">item two</a></li>
+									<li><a href = "#">item three</a></li>
+									<li><a href = "#">item four</a></li>
+								</ul>
+							</li>
 							<li><a href = "#">Stuff</a></li>
 						</ul>
 					</div>
@@ -159,7 +172,8 @@
 						</div>
 						<div class = "row">
 							<div class = "col-xs-12">
-								<div class = "grid-cont form-control">
+								<div class = "grid-cont">
+									<h3>Forms</h3>
 									<form action="#">
 										Text input<br>
 										<input type="text" name = "text" placeholder="Enter text"><br>
